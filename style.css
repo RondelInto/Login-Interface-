@@ -1,0 +1,182 @@
+/* Dark Blur Design with Bootstrap Enhancement */
+
+/* Background Effects */
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0d1424, #1a2a44, #0d1424);
+    filter: blur(8px);
+    z-index: -2;
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 14, 23, 0.7);
+    z-index: -1;
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(25, 30, 45, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 130, 200, 0.2) !important;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #4a7bc8, #2c5c9e, #0a0e17);
+    border-radius: 18px;
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(5px);
+}
+
+/* Logo Styling */
+.logo-icon {
+    background: linear-gradient(135deg, #4a7bc8 0%, #2c5c9e 100%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(74, 123, 200, 0.3);
+}
+
+.logo-text {
+    background: linear-gradient(to right, #fff, #a8c6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.tagline {
+    color: #8ca0d7 !important;
+    letter-spacing: 0.5px;
+}
+
+/* Custom Button Gradient */
+.gradient-btn {
+    background: linear-gradient(135deg, #4a7bc8 0%, #2c5c9e 100%) !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.gradient-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(74, 123, 200, 0.4) !important;
+}
+
+/* Form Input Styling */
+.bg-dark {
+    background-color: rgba(15, 20, 35, 0.7) !important;
+    border-color: rgba(100, 130, 200, 0.2) !important;
+}
+
+.bg-dark:focus {
+    background-color: rgba(15, 20, 35, 0.9) !important;
+    border-color: #4a7bc8 !important;
+    box-shadow: 0 0 0 0.25rem rgba(74, 123, 200, 0.25) !important;
+}
+
+.text-light {
+    color: #e2e8f0 !important;
+}
+
+.text-muted {
+    color: #8b9dc3 !important;
+}
+
+.border-secondary {
+    border-color: rgba(100, 130, 200, 0.2) !important;
+}
+
+/* Link Styling */
+.link-primary {
+    color: #6ea2ff !important;
+    transition: color 0.2s;
+}
+
+.link-primary:hover {
+    color: #8bb9ff !important;
+}
+
+/* Particle effect for background */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(74, 123, 200, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Gender selection cards */
+.form-check.card:hover {
+    border-color: #4a7bc8 !important;
+    background-color: rgba(15, 20, 35, 0.9) !important;
+}
+
+.form-check-input:checked ~ .form-check-label .form-check.card {
+    border-color: #4a7bc8 !important;
+    background-color: rgba(15, 20, 35, 0.9) !important;
+}
+
+/* Animation for form elements */
+.fade-in {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .glass-card {
+        margin: 1rem 0;
+    }
+    
+    .card-body {
+        padding: 1.5rem !important;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 20, 35, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a7bc8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a8bd8;
+}
