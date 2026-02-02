@@ -64,11 +64,19 @@
     letter-spacing: 0.5px;
 }
 
+.login-title {
+    background: linear-gradient(to right, #fff, #a8c6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 /* Custom Button Gradient */
 .gradient-btn {
     background: linear-gradient(135deg, #4a7bc8 0%, #2c5c9e 100%) !important;
     border: none !important;
     transition: all 0.3s ease !important;
+    padding: 12px 24px !important;
 }
 
 .gradient-btn:hover {
@@ -108,6 +116,7 @@
 
 .link-primary:hover {
     color: #8bb9ff !important;
+    text-decoration: underline !important;
 }
 
 /* Particle effect for background */
@@ -139,19 +148,6 @@
     background-color: rgba(15, 20, 35, 0.9) !important;
 }
 
-/* Animation for form elements */
-.fade-in {
-    animation: fadeInUp 0.5s ease forwards;
-    opacity: 0;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .glass-card {
@@ -161,22 +157,12 @@
     .card-body {
         padding: 1.5rem !important;
     }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(15, 20, 35, 0.5);
-}
-
-::-webkit-scrollbar-thumb {
-    background: #4a7bc8;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #5a8bd8;
+    
+    .logo-text {
+        font-size: 1.8rem;
+    }
+    
+    .login-title {
+        font-size: 1.5rem;
+    }
 }
